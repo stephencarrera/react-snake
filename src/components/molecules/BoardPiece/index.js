@@ -3,10 +3,10 @@ import Square from '../../atoms/Square';
 import * as c from '../../../config/constants';
 import PropTypes from 'prop-types';
 
-const Food = () => <Square backgroundColor={c.FOOD_COLOR} />;
+const BoardPiece = () => <Square backgroundColor={c.BOARD_COLOR} />;
 
-Food.PropTypes = {
+BoardPiece.PropTypes = {
   backgroundColor: PropTypes.string
 };
 
-export default Food;
+export default BoardPiece;

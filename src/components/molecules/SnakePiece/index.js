@@ -3,10 +3,10 @@ import Square from '../../atoms/Square';
 import * as c from '../../../config/constants';
 import PropTypes from 'prop-types';
 
-const Snake = () => <Square backgroundColor={c.SNAKE_COLOR} />;
+const SnakePiece = () => <Square backgroundColor={c.SNAKE_COLOR} />;
 
-Snake.PropTypes = {
+SnakePiece.PropTypes = {
   backgroundColor: PropTypes.string
 };
 
-export default Snake;
+export default SnakePiece;
