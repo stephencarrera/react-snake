@@ -4,7 +4,7 @@ import BoardPiece from '../../molecules/BoardPiece';
 import SnakePiece from '../../molecules/SnakePiece';
 import FoodPiece from '../../molecules/FoodPiece';
 import GameArea from '../../atoms/GameArea';
-
+import { makeApple } from '../../../helpers/makeApple';
 class Game extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +15,10 @@ class Game extends Component {
     };
     this.state = this.initialState;
   }
+  componentDidMount() {
+    this.setState({ foodCoordinates: makeApple(this.state) });
+  }
+
   getNewBoard() {
     const board = [];
     for (let i = 0; i < c.BOARD_WIDTH; i++) {
@@ -35,6 +39,11 @@ class Game extends Component {
     return {
       x: 2,
       y: 2
+    };
+  }
+  updateBoard() {
+    const newHeadCoord = {
+      ...this.state.snakeCoordinates[this.snakeCoordinates - 1]
     };
   }
   generatePieceComponent(square, squareId) {
