@@ -7,10 +7,10 @@ const Square = ({ backgroundColor }) => (
 );
 
 export const StyledSquare = styled.div`
-  width: '20px';
-  height: '20px';
-  margin: '0px';
-  display: 'inline-block';
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  display: inline-block;
   background: ${props => props.backgroundColor};
 `;
 

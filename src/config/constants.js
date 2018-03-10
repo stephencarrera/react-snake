@@ -10,3 +10,6 @@ export const RIGHT = 'RIGHT';
 export const BOARD_COLOR = 'darkgreen';
 export const SNAKE_COLOR = 'lightgreen';
 export const FOOD_COLOR = 'red';
+
+export const BOARD_WIDTH = 25;
+export const BOARD_HEIGHT = 25;
