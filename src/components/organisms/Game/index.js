@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import * as c from '../../../config/constants';
 import BoardPiece from '../../molecules/BoardPiece';
 import SnakePiece from '../../molecules/SnakePiece';
 import FoodPiece from '../../molecules/FoodPiece';
+import GameArea from '../../atoms/GameArea';
 
 class Game extends Component {
   constructor(props) {
@@ -58,7 +58,14 @@ class Game extends Component {
         piece = c.FOOD;
       }
     }
-    return <BoardPiece type={piece} key={squareId} />;
+    switch (piece) {
+      case c.SNAKE:
+        return <SnakePiece key={squareId} />;
+      case c.FOOD:
+        return <FoodPiece key={squareId} />;
+      default:
+        return <BoardPiece key={squareId} />;
+    }
   }
   generateRow(row, rowId) {
     return (
@@ -71,7 +78,7 @@ class Game extends Component {
     let board = this.state.squares.map((row, index) => {
       return this.generateRow(row, index);
     });
-    return <div>{board}</div>;
+    return <GameArea>{board}</GameArea>;
   }
 }
 
