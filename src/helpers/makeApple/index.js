@@ -1,5 +1,5 @@
 export const makeApple = state => {
-  const emptySquares = state.squares.reduce((prev = [], next) => {
+  let emptySquares = state.squares.reduce((prev = [], next) => {
     let filteredNext = next.filter(square => {
       let isEmpty = true;
       state.snakeCoordinates.forEach(position => {
