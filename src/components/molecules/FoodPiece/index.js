@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const FoodPiece = () => <Square backgroundColor={c.FOOD_COLOR} />;
 
-FoodPiece.PropTypes = {
+FoodPiece.propTypes = {
   backgroundColor: PropTypes.string
 };
 

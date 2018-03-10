@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const BoardPiece = () => <Square backgroundColor={c.BOARD_COLOR} />;
 
-BoardPiece.PropTypes = {
+BoardPiece.propTypes = {
   backgroundColor: PropTypes.string
 };
 

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const SnakePiece = () => <Square backgroundColor={c.SNAKE_COLOR} />;
 
-SnakePiece.PropTypes = {
+SnakePiece.propTypes = {
   backgroundColor: PropTypes.string
 };
 
