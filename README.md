@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Snake in React 16
 
-![Snake Gif][https://github.com/stephencarrera/react-snake/blob/master/snake.gif]
+![Snake Gif](https://github.com/stephencarrera/react-snake/blob/master/snake.gif)
 
 ## Installation
 
